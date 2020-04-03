@@ -1,0 +1,394 @@
+html{
+	font-family: 'Oswald', sans-serif;
+	font-family: 'Raleway', sans-serif;
+	font-size: 16px;
+	color: #555;
+}
+h1, h2, h3, h4, h5, h6{
+		font-family: 'Oswald', sans-serif;
+	}
+
+*{margin: 0;
+ padding: 0;
+ box-sizing: border-box;}
+
+ul{
+	list-style: none;
+}
+a{
+	color:white;
+}
+		/*--HEADER--*/
+header{
+	background-color: rgba(0,0,0,0.7);
+	position: fixed;
+	z-index: 3;
+	top: 0;
+	left: 0;
+	width: 100%;
+	color: #fff;
+	padding: 35px 85px 20px;
+	max-height: 15%;
+
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+header a{
+	text-decoration: none;
+	color: white;
+	opacity: 0.6;
+	cursor: pointer;
+}
+header a:hover{
+	opacity: 1;
+}
+header nav ul{
+	display: flex;
+	flex-direction: row;
+	font-size: 14px;
+	justify-content: flex-end;
+}
+header h2{
+	margin-bottom: 15px;
+}
+header nav li{
+	margin: 0 6px;
+	font-weight: bold;
+	font-size: 20px;
+}
+header nav li:firstchild{
+	margin-left: 0;
+}
+
+header nav li:last-child{
+	margin-left: 0;
+}
+
+@media(max-width: 1000px){
+	header{
+		text-align: center;
+		flex-direction: column;
+		padding: 20px 5px;
+	}
+	header img{
+		width:65%;
+	}
+	header nav{
+		justify-content: space-around;
+	}
+
+}
+
+		/*--HERO--*/
+#hero{
+	background: grey;
+	color: white;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-image: url('img/hero.jpg');
+	background-repeat:no-repeat;
+	background-size: cover;
+	min-height: 100vh;
+}
+
+#hero h1, #hero h3{
+	font-family: 'Oswald', sans-serif;
+	font-size: 28px;
+	text-shadow: 2px 2px #000;
+	margin-bottom: 40px;
+}
+
+#hero h1{
+	font-size: 60px;
+	margin-bottom: 15px;
+}
+
+#hero h3{
+	font-size: 18px;
+}
+
+#hero a.btn{
+	color:white;
+	background-color: #131633;
+	text-decoration: none;
+	padding: 20px 46px;
+	border-radius: 8px;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-align: center;
+	opacity: 1;
+	border:2px solid white;
+}
+
+#hero a.btn:hover{
+	background-color: #2196f3;
+
+}
+
+@media(max-width: 800px){
+	footer{
+		padding:80px 15px;}
+	#hero{
+		min-height: 600px;
+	}
+	#hero h1{
+	font-size: 36px;
+}
+	#hero a.btn{
+	padding: 15px 36px;
+}
+}
+
+				/*--Getting Around--*/
+
+#getting-around{
+	text-align: center;
+	max-width: 800px;
+	margin: 0 auto;
+}
+#getting-around ul.grid2{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: flex-start;
+	margin-bottom: 60px;
+}
+.ico{
+	font-size: 40px;
+	color: 2196f3;
+	margin-bottom: 10px;
+	color: blue;
+}
+#getting-around p{
+	margin-bottom: 20px;
+}
+#getting-around ul.grid2 li{
+	flex-basis: 30%;
+	padding: 0 20px;
+	margin-bottom: 40px;
+
+}
+
+#getting-around ul.grid2 li p{
+	text-align: center;
+	margin:0;
+}
+@media(max-width: 1000px){
+	#getting-around ul.grid2 li{
+		flex-basis: 80%;
+		margin-bottom: 50px;
+	}
+
+	#getting-around ul.grid2 li p{
+	text-align: center;
+	}
+}
+
+
+
+				/*--Quotes--*/
+#famous-quotes{
+	background-color: #fafafa;
+	padding-bottom: 40px;
+	text-align: center;
+}
+#famous-quotes .potrait-photos{
+	border-radius: 50%;
+	border:4px solid #2196f3;
+	margin-bottom: 10px;
+}
+
+#famous-quotes .potrait-photos:first-child{
+	margin-top:30px;
+}
+#famous-quotes .quote{
+	font-size: 22px;
+	font-weight: 400;
+	line-height: 1.5;
+	margin-bottom: 20px;
+	padding: 0 auto;
+}
+#famous-quotes .author{
+	line-height: 3;
+	padding: 0 auto;
+	margin: 20px auto;
+}
+#famous-quotes .author:last-child{
+	margin-bottom: 0;
+}
+
+
+@media(max-width: 1000px){
+#famous-quotes .author{
+	font-size: 14px;
+	padding: 0 20px;
+}
+#famous-quotes .quote
+{
+		font-size: 18px;
+	}
+}
+
+
+				/*--ABOUT--*/
+h3.title{
+	color: #131633;
+	text-transform: capitalize;
+	font-size: 32px;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+#about{
+	padding:10px;
+	background-color: #f7f7f7;
+	margin-bottom: 20px;
+}
+
+#about #cols2{
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	align-items: center;
+}
+
+.about-img{
+	border:4px solid #2196f3;
+	background-color: #2196f3;
+}
+
+.about-bio{
+	width: 65%;
+	max-width: 800px;
+	line-height: 2;
+	margin-left: 25px;
+}
+
+hr{
+	width: 150px;
+	height: 2px;
+	background-color: #2196f3;
+	border:0;
+	margin:40px auto;
+}
+@media(max-width: 600px){
+	#about #cols2{
+		flex-direction: column;
+	}
+	.about-bio{
+		margin-top: 20px;
+		line-height: 1.5;
+		text-align: left;
+	}
+}
+
+
+				/*----Gallery----*/
+#gallery{
+	background-color: #fff;
+}	
+
+#gallery .grid li{
+	padding: 20px;
+	height: 350px;
+	border-radius: 3px;
+	background-clip: content-box;
+	background-size: cover;
+	background-position: center;
+	background-color: #333;
+	border-radius: 30px;
+}	
+
+#gallery ul.grid{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+#gallery .grid li.small{
+	flex-basis: 35%;
+}
+
+#gallery .grid li.large{
+	flex-basis: 50%;
+}
+#gallery p{
+	max-width: 800px;
+	text-align: center;
+	margin:0 auto 35px;
+	padding: 0 20px;
+	line-height: 2;
+}
+@media(max-width: 1000px){
+	#gallery .grid li.small,
+	#gallery .grid li.large{
+		flex-basis: 100%;
+	}
+
+}
+
+				/*----Contact----*/
+
+section.flexbox-section{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	background-color: #808080;
+	color:black;
+	padding-top: 30px;
+	border-radius: 1%;	
+}				
+section.flexbox-section p{
+	max-width: 900px;
+	text-align: center;
+	margin-bottom:35px;
+	line-height: 1.5;
+	font-weight: bold;
+	} 
+				/*----MAP----*/
+
+
+
+				/*----FOOTER----*/
+
+footer{
+	background-color: grey;
+	color: white;
+	text-align: center;
+	padding: 80px 0;
+	margin: 0 0;
+	background: linear-gradient(to bottom,#284e7a,#000 100%);
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+
+}
+footer p{
+	text-transform: uppercase;
+	font-size: 14px;
+	color: rgba(255,255,255,.6)
+}
+footer ul{
+	margin-bottom: 25px;
+	display: flex;
+	flex-direction: row;
+}
+footer ul li a{
+	padding: 0 10px;
+	font-size: 30px;
+	cursor: pointer;
+}
+footer p{
+	text-transform: uppercase;
+	font-size: 16px;
+	color: rgba(255,255,255,.6);
+	margin-bottom: 10px;
+} 
